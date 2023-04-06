@@ -1,0 +1,95 @@
+
+body{
+    background-image: url(./frio.jpg);
+    background-size: cover;
+}
+
+.containerLogin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    
+}
+
+h1{
+    color: white;
+}
+
+.caja-formulario{
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+.cajaInput{
+    position: relative;
+    border-bottom: 2px solid white;
+    width: 310px;
+    margin: 30px 0;
+    height: 50px;
+}
+.cajaInput label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: .5s;
+    color: white;
+}
+
+.cajaInput input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+
+ion-icon{
+    color: white;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+}
+
+button{
+    width: 100%;
+    border: 2px solid white;
+    background-color: transparent;
+    height: 40px;
+    border-radius: 40px;
+    margin: 15px 0;
+    color: white;
+    cursor: pointer;
+}
+.enlacesLogin{
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+label{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
