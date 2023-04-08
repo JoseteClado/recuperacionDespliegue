@@ -69,13 +69,20 @@ ion-icon{
 button{
     width: 100%;
     border: 2px solid white;
+    color: white;
     background-color: transparent;
     height: 40px;
     border-radius: 40px;
     margin: 15px 0;
-    color: white;
     cursor: pointer;
 }
+
+button:hover{
+    color: rgb(76, 32, 188);
+    background-color: white;
+    font-family: sans-serif;
+}
+
 .enlacesLogin{
     display: flex;
     justify-content: space-between;
@@ -93,4 +100,10 @@ p{
 a{
     text-decoration: none;
     color: white;
+}
+
+@media(max-width:500px){
+    .caja-formulario{
+        border: none;
+    }
 }
